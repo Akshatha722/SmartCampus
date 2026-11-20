@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartCampus</h1>
+        <p>Campus Complaint Management System</p>
+    </header>
+
+    <main>
+        <section class="complaint-form">
+            <h2>Submit a Complaint</h2>
+
+            <form id="complaintForm">
+
+                <label>Student Name</label>
+                <input type="text" id="studentName"
+                    placeholder="Enter your name" required>
+
+                <label>Complaint Category</label>
+                <select id="category" required>
+                    <option value="">Select category</option>
+                    <option value="Water">Water</option>
+                    <option value="Electricity">Electricity</option>
+                    <option value="Cleanliness">Cleanliness</option>
+                    <option value="Classroom">Classroom</option>
+                </select>
+
+                <label>Description</label>
+                <textarea id="description"
+                    placeholder="Describe your problem"
+                    required></textarea>
+
+                <button type="submit">Submit Complaint</button>
+
+            </form>
+        </section>
+
+        <section class="complaint-list">
+            <h2>Submitted Complaints</h2>
+            <div id="complaintList">
+                <p>No complaints submitted yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
